@@ -30,7 +30,7 @@ const Background = () => {
     <div className={style.block}>
         <button onClick={aboutMe}>About Me</button>
         <button onClick={projects}>Projects</button>
-        <button onClick={contact}>Contact</button>
+        <button onClick={contact}>Contact </button>
       </div>
   </div>;
   if (step === 1){
