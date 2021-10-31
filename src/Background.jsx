@@ -28,8 +28,8 @@ const Background = () => {
     <h1>Welcome</h1>
     <br/>
     <div className={style.block}>
-        <button onClick={aboutMe}>About Me</button>
-        <button onClick={projects}>Projects</button>
+        <button onClick={aboutMe}>About Me </button>
+        <button onClick={projects}>Projects </button>
         <button onClick={contact}>Contact </button>
       </div>
   </div>;
