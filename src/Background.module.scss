@@ -1,0 +1,138 @@
+// .test {
+//     background-color: beige;
+//     color: red;
+// }
+.navbar {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  transition: all 2s ease-in-out;
+  z-index: 5;
+  //   padding: 1em;
+  button {
+    color: rgb(216, 216, 216);
+    background-color: black;
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin: 0.5em;
+    border: none;
+  }
+  button:hover {
+    background: linear-gradient(
+      60deg,
+      hsl(224, 85%, 66%),
+      hsl(269, 85%, 66%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(44, 85%, 66%),
+      hsl(89, 85%, 66%),
+      hsl(134, 85%, 66%),
+      hsl(179, 85%, 66%)
+    );
+    background-clip: text;
+    color: rgba(255, 255, 255, 0.507);
+    cursor: pointer;
+  }
+}
+.hidden {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: -2.5em;
+  opacity: 0;
+  transition: all 2s ease-in-out;
+
+  button {
+    color: rgb(216, 216, 216);
+    background-color: black;
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin: 0.5em;
+    border: none;
+  }
+}
+.block {
+  button{
+    display: block;
+    width: 90%;
+    color: rgb(216, 216, 216);
+    background-color: black;
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 0.5em;
+    border: none;
+  }
+  button:hover {
+    background: linear-gradient(
+      60deg,
+      hsl(224, 85%, 66%),
+      hsl(269, 85%, 66%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(44, 85%, 66%),
+      hsl(89, 85%, 66%),
+      hsl(134, 85%, 66%),
+      hsl(179, 85%, 66%)
+    );
+    background-clip: text;
+    color: rgba(255, 255, 255, 0.507);
+    cursor: pointer;
+  }
+}
+.container {
+  --border-width: 2px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;  padding: 0.5em;
+  max-width: 200px;
+  //   height: 200px;
+  font-family: Lato, sans-serif;
+  font-size: 0.5em;
+//   text-transform: uppercase;
+  color: white;
+  background: rgb(0, 0, 0);
+  border-radius: var(--border-width);
+  // padding: 0;
+  transition: all 10s ease-in-out;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      hsl(224, 85%, 66%),
+      hsl(269, 85%, 66%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(44, 85%, 66%),
+      hsl(89, 85%, 66%),
+      hsl(134, 85%, 66%),
+      hsl(179, 85%, 66%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+  }
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}

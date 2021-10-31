@@ -1,0 +1,19 @@
+ul {
+  list-style: none;
+  text-align: right;
+}
+
+.link {
+  color: #d8d8d8;
+  font-size: 1em;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.link:hover {
+  background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
+  background-clip: text;
+  color: rgba(255, 255, 255, 0.507);
+  cursor: pointer;
+}
+/*# sourceMappingURL=Projects.module.css.map */

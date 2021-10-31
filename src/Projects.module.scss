@@ -1,0 +1,26 @@
+ul {
+    list-style: none;
+    text-align: right;
+}
+.link {
+    color: rgb(216, 216, 216);
+    font-size: 1em;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.link:hover {
+    background: linear-gradient(
+      60deg,
+      hsl(224, 85%, 66%),
+      hsl(269, 85%, 66%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(44, 85%, 66%),
+      hsl(89, 85%, 66%),
+      hsl(134, 85%, 66%),
+      hsl(179, 85%, 66%)
+    );
+    background-clip: text;
+    color: rgba(255, 255, 255, 0.507);
+    cursor: pointer;
+}

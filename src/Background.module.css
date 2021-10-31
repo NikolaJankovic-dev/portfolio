@@ -1,0 +1,121 @@
+.navbar {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  z-index: 5;
+}
+
+.navbar button {
+  color: #d8d8d8;
+  background-color: black;
+  font-size: 1.5em;
+  font-weight: bolder;
+  margin: 0.5em;
+  border: none;
+}
+
+.navbar button:hover {
+  background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
+  background-clip: text;
+  color: rgba(255, 255, 255, 0.507);
+  cursor: pointer;
+}
+
+.hidden {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: -2.5em;
+  opacity: 0;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.hidden button {
+  color: #d8d8d8;
+  background-color: black;
+  font-size: 1.5em;
+  font-weight: bolder;
+  margin: 0.5em;
+  border: none;
+}
+
+.block button {
+  display: block;
+  width: 90%;
+  color: #d8d8d8;
+  background-color: black;
+  font-size: 2em;
+  font-weight: bolder;
+  margin: 0.5em;
+  border: none;
+}
+
+.block button:hover {
+  background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
+  background-clip: text;
+  color: rgba(255, 255, 255, 0.507);
+  cursor: pointer;
+}
+
+.container {
+  --border-width: 2px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+  padding: 0.5em;
+  max-width: 200px;
+  font-family: Lato, sans-serif;
+  font-size: 0.5em;
+  color: white;
+  background: black;
+  border-radius: var(--border-width);
+  -webkit-transition: all 10s ease-in-out;
+  transition: all 10s ease-in-out;
+}
+
+.container::after {
+  position: absolute;
+  content: "";
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: -1;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(--border-width));
+  -webkit-animation: moveGradient 4s alternate infinite;
+          animation: moveGradient 4s alternate infinite;
+}
+
+@-webkit-keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+/*# sourceMappingURL=Background.module.css.map */
